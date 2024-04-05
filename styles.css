@@ -5,11 +5,12 @@ body {
   
   .container {
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     position: relative;
     min-height: 100vh;
+    max-width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
   }
   
   header {
