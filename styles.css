@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: monospace;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  header {
+    text-align: right;
+  }
+  
+  h1 {
+    opacity: 0;
+    animation: fadeInRight 3s forwards;
+    display: inline-block;
+  }
+  
+  .logo {
+    width: 20%; /* Adjust the size as needed */
+    height: auto;
+    margin-left: 5px;
+  }
+  
+  main {
+    padding: 20px 0;
+  }
+  
+  section {
+    opacity: 0;
+    transform: translateY(20px); /* Start with a slight upward movement */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition for opacity and transform */
+    padding: 20px;
+    margin-bottom: 10%;
+  }
+  
+  #drink,
+  #main {
+    text-align: left;
+  }
+  
+  #appetizer,
+  #dessert {
+    text-align: right;
+  }
+  
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInOut {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
